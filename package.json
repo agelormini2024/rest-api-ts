@@ -1,14 +1,26 @@
 {
   "name": "rest-api-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
+    "dev": "nodemon --exec ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "express",
+    "typescript",
+    "rest-api",
+    "template"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "REST API template with Node.js, Express and TypeScript",
   "devDependencies": {
     "@eslint/css": "^0.11.0",
     "@eslint/js": "^9.34.0",
@@ -21,6 +33,7 @@
     "eslint": "^9.34.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.42.0"
