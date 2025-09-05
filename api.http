@@ -1,0 +1,30 @@
+### Verificar estado del servidor
+GET http://localhost:3000/health
+
+### Obtener todos los usuarios
+GET http://localhost:3000/api/users
+
+### Crear un nuevo usuario
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Ana Martínez",
+  "email": "ana@email.com",
+  "age": 27
+}
+
+### Obtener usuario específico
+GET http://localhost:3000/api/users/1
+
+### Actualizar usuario
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Juan Carlos Pérez",
+  "age": 26
+}
+
+### Eliminar usuario
+DELETE http://localhost:3000/api/users/1
