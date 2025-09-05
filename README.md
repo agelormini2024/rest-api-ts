@@ -21,6 +21,7 @@ rest-api-ts/
 │   └── middleware/              # 🛡️ Funciones intermedias
 │       └── errorMiddleware.ts
 ├── .env                         # 🔒 Variables de entorno
+├── .env.example                 # 📋 Plantilla de variables de entorno
 ├── .gitignore                   # 📝 Archivos a ignorar por Git
 ├── package.json                 # 📦 Dependencias y scripts
 ├── tsconfig.json                # ⚙️ Configuración de TypeScript
@@ -52,7 +53,8 @@ rest-api-ts/
 
 3. **Configura las variables de entorno:**
    ```bash
-   cp .env.example .env  # Si existe, o crea tu propio .env
+   cp .env.example .env
+   # Edita .env con tus valores específicos
    ```
 
 4. **Inicia el servidor de desarrollo:**
@@ -65,12 +67,15 @@ rest-api-ts/
 | Script | Descripción |
 |--------|-------------|
 | `npm run dev` | 🔧 Inicia el servidor en modo desarrollo con ts-node |
+| `npm run dev:watch` | 👀 Inicia el servidor con recarga automática |
 | `npm run build` | 🏗️ Compila TypeScript a JavaScript en `/dist` |
 | `npm run start` | ▶️ Ejecuta la versión compilada desde `/dist` |
 | `npm run build:watch` | 👀 Compila en modo watch (recarga automática) |
 | `npm run clean` | 🧹 Elimina la carpeta `/dist` |
 | `npm run lint` | 🔍 Ejecuta ESLint para verificar el código |
 | `npm run lint:fix` | 🔧 Ejecuta ESLint y corrige errores automáticamente |
+| `npm run type-check` | ✅ Verifica tipos sin compilar |
+| `npm run setup` | 🚀 Instala dependencias y compila el proyecto |
 
 ## 🌐 Endpoints de la API
 
@@ -131,13 +136,27 @@ Content-Type: application/json
 
 ## ⚙️ Variables de Entorno
 
-Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
+Copia el archivo `.env.example` a `.env` y personaliza los valores:
+
+```bash
+cp .env.example .env
+```
+
+Variables disponibles:
 
 ```env
+# Configuración básica
 NODE_ENV=development
 PORT=3000
 FRONTEND_URL=http://localhost:3000
 API_URL=http://localhost:3000/api
+
+# Configuración de base de datos (para uso futuro)
+# DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+
+# Configuración JWT (para uso futuro)
+# JWT_SECRET=your-secret-key-here
+# JWT_EXPIRES_IN=7d
 ```
 
 ## 🏭 Producción
