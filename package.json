@@ -1,14 +1,21 @@
 {
   "name": "rest-api-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "REST API template built with Node.js, Express, and TypeScript",
+  "main": "dist/server.js",
   "scripts": {
+    "start": "node dist/server.js",
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["rest-api", "typescript", "express", "node.js", "template", "api"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@eslint/css": "^0.11.0",
     "@eslint/js": "^9.34.0",
