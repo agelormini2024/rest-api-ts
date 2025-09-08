@@ -374,11 +374,11 @@ Este archivo incluye:
 ---
 
 ## 📄 Licencia
+ISC © [Alejandro Gelormini](https://github.com/agelormini2024)
 
 Este proyecto es un template educativo de código abierto. Siéntete libre de usarlo, modificarlo y distribuirlo.
 
 ---
 
-**¡Ya tienes una base sólida y moderna para tus APIs con Node.js, Express y TypeScript!** 🚀
-
 _Template creado para acelerar el desarrollo de APIs RESTful_
+
