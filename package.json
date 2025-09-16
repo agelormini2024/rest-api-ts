@@ -1,48 +1,48 @@
 {
-  "name": "rest-api-ts",
-  "version": "1.0.0",
-  "main": "server.ts",
-  "scripts": {
-    "dev": "nodemon --exec ts-node server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
-    "type-check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "nodejs",
-    "express",
-    "typescript",
-    "rest-api",
-    "template"
-  ],
-  "author": "",
-  "license": "ISC",
-  "description": "REST API template with Node.js, Express and TypeScript",
-  "devDependencies": {
-    "@eslint/css": "^0.11.0",
-    "@eslint/js": "^9.34.0",
-    "@eslint/json": "^0.13.2",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/helmet": "^0.0.48",
-    "@types/morgan": "^1.9.10",
-    "@types/node": "^24.3.1",
-    "eslint": "^9.34.0",
-    "globals": "^16.3.0",
-    "jiti": "^2.5.1",
-    "nodemon": "^3.1.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.42.0"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "helmet": "^8.1.0",
-    "morgan": "^1.10.1"
-  }
+    "name": "rest-api-ts",
+    "version": "1.0.0",
+    "main": "server.ts",
+    "scripts": {
+        "dev": "nodemon --exec ts-node server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix",
+        "type-check": "tsc --noEmit",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "typescript",
+        "rest-api",
+        "template"
+    ],
+    "author": "Alejandro Gelormini",
+    "license": "ISC",
+    "description": "REST API template with Node.js, Express and TypeScript",
+    "devDependencies": {
+        "@eslint/css": "^0.11.0",
+        "@eslint/js": "^9.34.0",
+        "@eslint/json": "^0.13.2",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/helmet": "^0.0.48",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^24.3.1",
+        "eslint": "^9.34.0",
+        "globals": "^16.3.0",
+        "jiti": "^2.5.1",
+        "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.42.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0",
+        "helmet": "^8.1.0",
+        "morgan": "^1.10.1"
+    }
 }
