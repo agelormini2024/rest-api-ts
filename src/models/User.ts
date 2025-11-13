@@ -6,7 +6,11 @@ export interface IUser {
     createdAt: string;
 }
 
+<<<<<<< HEAD
 let users: IUser[] = [
+=======
+const users: IUser[] = [
+>>>>>>> copilot/fix-92dd1aac-5897-48ae-9cf9-bcbba4fe8a6a
     { id: 1, name: 'Juan Pérez', email: 'juan@email.com', age: 25, createdAt: new Date().toISOString() },
     { id: 2, name: 'María García', email: 'maria@email.com', age: 30, createdAt: new Date().toISOString() },
     { id: 3, name: 'Carlos López', email: 'carlos@email.com', age: 28, createdAt: new Date().toISOString() },
